@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <ellipse cx="64" cy="119" rx="34" ry="5.5" fill="#000000" opacity="0.22"/>
+  <g >
+    
+    <g stroke="#5b3a1d" stroke-width="3">
+      <ellipse cx="36" cy="46" rx="10" ry="9" fill="#d2a873"/>
+      <ellipse cx="92" cy="46" rx="10" ry="9" fill="#d2a873"/>
+    </g>
+    <ellipse cx="36.5" cy="47" rx="5" ry="4.5" fill="#b07a48"/>
+    <ellipse cx="91.5" cy="47" rx="5" ry="4.5" fill="#b07a48"/>
+    <!-- Silueta con contorno unificado -->
+    <g fill="#5b3a1d">
+      <ellipse cx="64" cy="72" rx="41" ry="37"/>
+      <ellipse cx="64" cy="94" rx="30" ry="22"/>
+    </g>
+    <ellipse cx="64" cy="72" rx="38" ry="34" fill="#e9c896"/>
+    <ellipse cx="64" cy="94" rx="27" ry="19" fill="#e9c896"/>
+    <!-- Brillo del pelaje -->
+    <ellipse cx="60" cy="52" rx="20" ry="9" fill="#ffffff" opacity="0.16"/>
+    <!-- Hocico -->
+    <ellipse cx="64" cy="93" rx="24" ry="16.5" fill="#c9955e"/>
+    <ellipse cx="64" cy="86" rx="15" ry="6" fill="#ffffff" opacity="0.12"/>
+    <!-- Mejillas -->
+    <ellipse cx="38" cy="85" rx="6.5" ry="4" fill="#ef8f7c" opacity="0.45"/>
+    <ellipse cx="90" cy="85" rx="6.5" ry="4" fill="#ef8f7c" opacity="0.45"/>
+    <!-- Ojos -->
+    <ellipse cx="48" cy="66" rx="5" ry="5.6" fill="#2a1a0f"/>
+    <ellipse cx="80" cy="66" rx="5" ry="5.6" fill="#2a1a0f"/>
+    <circle cx="49.8" cy="64" r="1.8" fill="#fff6e5"/>
+    <circle cx="81.8" cy="64" r="1.8" fill="#fff6e5"/>
+    <!-- Fosas nasales -->
+    <ellipse cx="56" cy="89" rx="3.4" ry="2.3" transform="rotate(-20 56 89)" fill="#2a1a0f"/>
+    <ellipse cx="72" cy="89" rx="3.4" ry="2.3" transform="rotate(20 72 89)" fill="#2a1a0f"/>
+    <!-- Sonrisa -->
+    <path d="M64 94 v4.5 M57.5 99.5 Q64 105 70.5 99.5" fill="none" stroke="#2a1a0f" stroke-width="2.4" stroke-linecap="round"/>
+    
+    <g fill="#f5c542" stroke="#9a6b12" stroke-width="2.5" stroke-linejoin="round">
+      <path d="M60 1 H68 V8 H75 V15 H68 V24 H60 V15 H53 V8 H60 Z"/>
+    </g>
+    <path d="M28 52 L27 24 L43 36 L52 18 L64 30 L76 18 L85 36 L101 24 L100 52 Z" fill="#f5c542" stroke="#9a6b12" stroke-width="3" stroke-linejoin="round"/>
+    <rect x="26" y="44" width="76" height="10" rx="4" fill="#e9ad2c" stroke="#9a6b12" stroke-width="2.5"/>
+    <g fill="#ffe08a" stroke="#9a6b12" stroke-width="2">
+      <circle cx="27" cy="23" r="4"/><circle cx="101" cy="23" r="4"/>
+      <circle cx="52" cy="17" r="3.5"/><circle cx="76" cy="17" r="3.5"/>
+    </g>
+    <ellipse cx="64" cy="40" rx="6.5" ry="8" fill="#3a7bd5" stroke="#173f7a" stroke-width="2"/>
+    <ellipse cx="62" cy="37" rx="2" ry="2.6" fill="#ffffff" opacity="0.75"/>
+    <g fill="#d93636" stroke="#7d1414" stroke-width="1.6">
+      <circle cx="42" cy="49" r="3"/><circle cx="86" cy="49" r="3"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <ellipse cx="64" cy="119" rx="34" ry="5.5" fill="#000000" opacity="0.22"/>
+  <g >
+    
+    <g stroke="#24140a" stroke-width="3">
+      <ellipse cx="36" cy="46" rx="10" ry="9" fill="#734826"/>
+      <ellipse cx="92" cy="46" rx="10" ry="9" fill="#734826"/>
+    </g>
+    <ellipse cx="36.5" cy="47" rx="5" ry="4.5" fill="#472914"/>
+    <ellipse cx="91.5" cy="47" rx="5" ry="4.5" fill="#472914"/>
+    <!-- Silueta con contorno unificado -->
+    <g fill="#24140a">
+      <ellipse cx="64" cy="72" rx="41" ry="37"/>
+      <ellipse cx="64" cy="94" rx="30" ry="22"/>
+    </g>
+    <ellipse cx="64" cy="72" rx="38" ry="34" fill="#8b5a32"/>
+    <ellipse cx="64" cy="94" rx="27" ry="19" fill="#8b5a32"/>
+    <!-- Brillo del pelaje -->
+    <ellipse cx="60" cy="52" rx="20" ry="9" fill="#ffffff" opacity="0.16"/>
+    <!-- Hocico -->
+    <ellipse cx="64" cy="93" rx="24" ry="16.5" fill="#5f391d"/>
+    <ellipse cx="64" cy="86" rx="15" ry="6" fill="#ffffff" opacity="0.12"/>
+    <!-- Mejillas -->
+    <ellipse cx="38" cy="85" rx="6.5" ry="4" fill="#ef8f7c" opacity="0.45"/>
+    <ellipse cx="90" cy="85" rx="6.5" ry="4" fill="#ef8f7c" opacity="0.45"/>
+    <!-- Ojos -->
+    <ellipse cx="48" cy="66" rx="5" ry="5.6" fill="#140b05"/>
+    <ellipse cx="80" cy="66" rx="5" ry="5.6" fill="#140b05"/>
+    <circle cx="49.8" cy="64" r="1.8" fill="#f5d7b3"/>
+    <circle cx="81.8" cy="64" r="1.8" fill="#f5d7b3"/>
+    <!-- Fosas nasales -->
+    <ellipse cx="56" cy="89" rx="3.4" ry="2.3" transform="rotate(-20 56 89)" fill="#140b05"/>
+    <ellipse cx="72" cy="89" rx="3.4" ry="2.3" transform="rotate(20 72 89)" fill="#140b05"/>
+    <!-- Sonrisa -->
+    <path d="M64 94 v4.5 M57.5 99.5 Q64 105 70.5 99.5" fill="none" stroke="#140b05" stroke-width="2.4" stroke-linecap="round"/>
+    
+    <path d="M34 50 L33 26 L46 36 L55 17 L64 33 L73 17 L82 36 L95 26 L94 50 Z" fill="#f5c542" stroke="#9a6b12" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M38 42 H90" stroke="#d99a1e" stroke-width="2"/>
+    <g fill="#ffe08a" stroke="#9a6b12" stroke-width="2">
+      <circle cx="33" cy="25" r="4"/><circle cx="55" cy="16" r="4"/>
+      <circle cx="73" cy="16" r="4"/><circle cx="95" cy="25" r="4"/>
+    </g>
+    <g fill="#d93636" stroke="#7d1414" stroke-width="1.8">
+      <circle cx="48" cy="45" r="3.6"/><circle cx="64" cy="45" r="4.2"/><circle cx="80" cy="45" r="3.6"/>
+      <circle cx="64" cy="31" r="3"/>
+    </g>
+    <circle cx="62.8" cy="43.6" r="1.2" fill="#ffffff" opacity="0.8"/>
+  </g>
+</svg>
