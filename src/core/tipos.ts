@@ -13,7 +13,6 @@ export const CLARAS = 0;
 export const OSCURAS = 8;
 export type Color = typeof CLARAS | typeof OSCURAS;
 
-export const VACIA = 0;
 export const PEON = 1;
 export const CABALLO = 2;
 export const ALFIL = 3;
@@ -53,14 +52,6 @@ export interface Movimiento {
   bandera: number;
 }
 
-export function colorDe(pieza: number): Color {
-  return (pieza & 8) as Color;
-}
-
-export function tipoDe(pieza: number): number {
-  return pieza & 7;
-}
-
 export function colorContrario(color: Color): Color {
   return (color ^ 8) as Color;
 }
@@ -68,5 +59,5 @@ export function colorContrario(color: Color): Color {
 /** Letras FEN de cada tipo (índice = tipo). */
 export const LETRAS_FEN = ['', 'p', 'n', 'b', 'r', 'q', 'k'];
 
-/** Valor de material clásico usado para la ventaja (+N) y el modo fácil. */
+/** Valor de material clásico (en peones) para mostrar la ventaja (+N) y ordenar las capturas. */
 export const VALOR_MATERIAL = [0, 1, 3, 3, 5, 9, 0];

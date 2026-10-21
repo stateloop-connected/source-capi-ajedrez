@@ -33,7 +33,6 @@ export const TEXTO = {
   marronOscuro: '#3b2410',
   crema: '#fff6e5',
   verde: '#2f6b3a',
-  rojo: '#c0392b',
   dorado: '#f5c542',
   gris: '#7a6a58',
 } as const;

@@ -4,7 +4,10 @@
  * - Precarga todos los archivos del juego para que funcione sin conexión.
  * - Navegación: red primero y, si falla, la copia guardada de index.html.
  * - Resto (incluida la fuente de Google Fonts): caché primero y actualización en segundo plano.
+ * Se usa ignoreVary porque los scripts de módulo envían la cabecera Origin y algunos
+ * servidores responden con "Vary: Origin", lo que impediría encontrarlos sin conexión.
  */
+const OPCIONES_BUSQUEDA = { ignoreVary: true };
 const VERSION = '__VERSION__';
 const CACHE = `capi-ajedrez-${VERSION}`;
 const PRECARGA = __PRECARGA__;
@@ -42,13 +45,13 @@ self.addEventListener('fetch', (evento) => {
           caches.open(CACHE).then((cache) => cache.put('./index.html', copia));
           return respuesta;
         })
-        .catch(() => caches.match('./index.html')),
+        .catch(() => caches.match('./index.html', OPCIONES_BUSQUEDA).then((r) => r || Response.error())),
     );
     return;
   }
 
   evento.respondWith(
-    caches.match(peticion).then((guardada) => {
+    caches.match(peticion, OPCIONES_BUSQUEDA).then((guardada) => {
       const red = fetch(peticion)
         .then((respuesta) => {
           if (respuesta.ok || respuesta.type === 'opaque') {
@@ -57,7 +60,7 @@ self.addEventListener('fetch', (evento) => {
           }
           return respuesta;
         })
-        .catch(() => guardada);
+        .catch(() => guardada || Response.error());
       return guardada || red;
     }),
   );

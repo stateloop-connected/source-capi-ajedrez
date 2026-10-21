@@ -282,16 +282,6 @@ export class Posicion {
     return this.casillaAtacada(this.reyes[color >> 3], (color ^ 8) as Color);
   }
 
-  /** Número de medios movimientos que se pueden deshacer. */
-  get jugadasHechas(): number {
-    return this.pila.length;
-  }
-
-  /** Último movimiento hecho o null. */
-  ultimoMovimiento(): Movimiento | null {
-    return this.pila.length > 0 ? this.pila[this.pila.length - 1].mov : null;
-  }
-
   /**
    * Cuántas veces ha aparecido la posición actual (incluida la actual),
    * mirando solo hacia atrás hasta el último movimiento irreversible.

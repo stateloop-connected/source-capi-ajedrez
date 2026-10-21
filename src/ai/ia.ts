@@ -7,8 +7,6 @@ import { VALOR_PIEZA } from './evaluacion';
 
 export type Dificultad = 'facil' | 'medio' | 'dificil';
 
-export const DIFICULTADES: readonly Dificultad[] = ['facil', 'medio', 'dificil'];
-
 /** Tiempo de reflexión del modo difícil. */
 export const TIEMPO_DIFICIL_MS = 1500;
 

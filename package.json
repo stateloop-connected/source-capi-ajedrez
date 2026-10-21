@@ -9,12 +9,15 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "iconos": "node scripts/generar-iconos.mjs",
+    "piezas": "node scripts/generar-piezas.mjs && node scripts/generar-iconos-ui.mjs"
   },
   "dependencies": {
     "phaser": "^3.90.0"
   },
   "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "@types/node": "^24.19.2",
     "typescript": "^5.9.3",
     "vite": "^8.3.5",
