@@ -274,7 +274,11 @@ probó el juego en el navegador (Chrome/Edge con la extensión de Claude):
 
 🌐 **https://capi-ajedrez.vercel.app**
 
-Desplegado con `npx vercel --prod` (Vercel ejecuta `npm run build` y publica `dist/`). Se
+Código fuente: **https://github.com/stvnalc/capi-ajedrez**
+
+El proyecto de Vercel está conectado al repositorio: cada push a `main` se despliega
+automáticamente en producción (Vercel ejecuta `npm run build` y publica `dist/`), y GitHub
+Actions vuelve a pasar los tests y el build. El primer despliegue se hizo con `npx vercel --prod`. Se
 comprobó en producción que la página, el manifest, los íconos y `sw.js` responden con 200, que
 el service worker queda activo y que se puede jugar contra la Capi-IA. Para instalarla en Android,
 abre la URL en Chrome y elige «Instalar aplicación» (o «Añadir a pantalla de inicio»).
