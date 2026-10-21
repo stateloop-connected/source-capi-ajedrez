@@ -1,6 +1,16 @@
 # Capi-Ajedrez 🌿♟️
 
+[![CI](https://github.com/stvnalc/capi-ajedrez/actions/workflows/ci.yml/badge.svg)](https://github.com/stvnalc/capi-ajedrez/actions/workflows/ci.yml)
+[![Jugar ahora](https://img.shields.io/badge/jugar-capi--ajedrez.vercel.app-4f9a5a)](https://capi-ajedrez.vercel.app)
+[![Licencia MIT](https://img.shields.io/badge/licencia-MIT-f5c542)](LICENSE)
+
 ![Logo de Capi-Ajedrez](public/assets/logo.svg)
+
+**🎮 Juega ahora: https://capi-ajedrez.vercel.app**
+
+| Menú principal | Partida contra la Capi-IA |
+| --- | --- |
+| ![Menú principal](docs/captura-menu.jpg) | ![Partida en curso con los movimientos posibles del caballo](docs/captura-partida.jpg) |
 
 **Capi-Ajedrez** es un ajedrez 2D completo en el que todas las piezas son capibaras.
 Se juega en el navegador (móvil vertical, móvil horizontal o escritorio), con toque, clic o
@@ -90,6 +100,8 @@ src/
 tests/       tests de core (perft y reglas) y de ai
 scripts/     generadores de SVG e íconos
 public/      piezas SVG, logo, íconos y manifest
+docs/        capturas de pantalla del README
+.github/     integración continua (tests y build en cada push)
 ```
 
 ### Flujo de escenas
@@ -266,3 +278,8 @@ Desplegado con `npx vercel --prod` (Vercel ejecuta `npm run build` y publica `di
 comprobó en producción que la página, el manifest, los íconos y `sw.js` responden con 200, que
 el service worker queda activo y que se puede jugar contra la Capi-IA. Para instalarla en Android,
 abre la URL en Chrome y elige «Instalar aplicación» (o «Añadir a pantalla de inicio»).
+
+## Licencia
+
+Código bajo licencia [MIT](LICENSE). Las piezas capibara, el logo y los íconos fueron dibujados
+para este proyecto (generados por los scripts de `scripts/`) y se distribuyen con la misma licencia.

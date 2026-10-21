@@ -25,5 +25,11 @@
   },
   "engines": {
     "node": ">=20"
-  }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stvnalc/capi-ajedrez.git"
+  },
+  "homepage": "https://capi-ajedrez.vercel.app"
 }
