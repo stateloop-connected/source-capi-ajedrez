@@ -32,6 +32,8 @@ const juego = new Phaser.Game({
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
   input: { activePointers: 2 },
+  // Los sonidos se sintetizan aparte con WebAudio (src/audio), así que Phaser no necesita audio.
+  audio: { noAudio: true },
   render: { antialias: true, roundPixels: false },
   scene: [BootScene, MenuScene, InstructionsScene, GameScene],
 });

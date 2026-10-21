@@ -177,6 +177,7 @@ export class GameScene extends Phaser.Scene {
       this.input.off(Phaser.Input.Events.POINTER_DOWN, this.alPulsar, this);
       this.input.off(Phaser.Input.Events.POINTER_MOVE, this.alMover, this);
       this.input.off(Phaser.Input.Events.POINTER_UP, this.alSoltar, this);
+      this.input.setDefaultCursor('default');
       this.guardar();
       this.cancelarIA();
     });
@@ -455,7 +456,10 @@ export class GameScene extends Phaser.Scene {
 
   private alMover(puntero: Phaser.Input.Pointer): void {
     const a = this.arrastre;
-    if (!a || !puntero.isDown) return;
+    if (!a || !puntero.isDown) {
+      this.actualizarCursor(puntero);
+      return;
+    }
     const sprite = this.sprites.get(a.casilla);
     if (!sprite) return;
     if (!a.moviendo) {
@@ -466,6 +470,17 @@ export class GameScene extends Phaser.Scene {
     }
     sprite.setPosition(puntero.x, puntero.y - this.casilla * 0.15);
     this.dibujarResaltes(this.casillaEn(puntero.x, puntero.y));
+  }
+
+  /** Mano sobre las piezas que se pueden mover y sobre las casillas de destino (escritorio). */
+  private actualizarCursor(puntero: Phaser.Input.Pointer): void {
+    const casilla = this.casillaEn(puntero.x, puntero.y);
+    let util = false;
+    if (casilla >= 0 && this.puedeMoverUsuario()) {
+      const pieza = this.partida.posicion.tablero[casilla];
+      util = (pieza !== 0 && (pieza & 8) === this.partida.turno) || this.destinos.some((m) => m.hasta === casilla);
+    }
+    this.input.setDefaultCursor(util ? 'pointer' : 'default');
   }
 
   private alSoltar(puntero: Phaser.Input.Pointer): void {
