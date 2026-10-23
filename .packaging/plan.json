@@ -1,0 +1,43 @@
+{
+  "build_script": "tsc --noEmit && vite build",
+  "gameplay_or_asset_changes": false,
+  "google_fonts_selfhost": {
+    "families": [
+      {
+        "family": "Fredoka",
+        "source": "ofl/fredoka/OFL.txt",
+        "spdx": "OFL-1.1"
+      }
+    ],
+    "font_files": 3,
+    "fonts_dir": ".packaging/google-fonts",
+    "google_fonts_commit": "e7db6ca603fd4862010383ff17ffd6cc4ffac1c0",
+    "helper": "google-fonts-selfhost.py",
+    "stylesheets": [
+      {
+        "local": ".packaging/google-fonts/125660bc475bcc4e.css",
+        "sha256": "b3c3883381f7fc779a47b0c4b9dde29733ad3a6d659567bfe553b2454414adb3",
+        "url": "https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap"
+      }
+    ],
+    "total_font_bytes": 43160,
+    "version": 1
+  },
+  "lockfile": "package-lock.json",
+  "mode": "native_source_build",
+  "repository": "stvnalc/capi-ajedrez",
+  "schema_version": 1,
+  "source_changes": [
+    ".packaging/plan.json",
+    ".packaging/google-fonts/125660bc475bcc4e.css",
+    ".packaging/google-fonts/NOTICE.md",
+    ".packaging/google-fonts/files/0d86eb1801eb104bb3e8.woff2",
+    ".packaging/google-fonts/files/30843913b91f99de14ad.woff2",
+    ".packaging/google-fonts/files/d4d6f896f429b330a851.woff2",
+    ".packaging/google-fonts/licenses/Fredoka-OFL-1.1.txt",
+    "index.html"
+  ],
+  "status": "ready",
+  "upstream_code_executed_locally": false,
+  "upstream_sha": "1dfc6ca46035a76888d5d6c7a00c7b1ec5a4c22f"
+}
